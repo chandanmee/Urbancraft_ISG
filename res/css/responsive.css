@@ -1,0 +1,47 @@
+@media (max-width:1660px) {
+    .navbar .container-fluid{
+        padding: 0.375rem 4rem;
+    }
+}
+
+@media (max-width:1440px) {
+    .navbar .container-fluid{
+        padding: 0.375rem 3rem;
+    }
+}
+
+@media (max-width:1366px) {
+    .navbar .container-fluid{
+        padding: 0.375rem 2.5rem;
+    }
+    .carousel-container{
+        height:430px;
+    }
+}
+
+@media (max-width:1178px) {
+    padding: 0.375rem 2.5rem;
+}
+
+@media (max-width:992px) {
+    
+}
+
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:576px) {
+    .categories-item {
+        height: 120px!important; /* Set the height to match the width for square items */
+        width:120px!important;
+    }
+    .carousel-container{
+        height:245px;
+    }
+}
+
+@media (max-width:375px) {
+    
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urbancraft | Online Shopping Store, Platform</title>
+  <!-- Link to Bootstrap CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     -->
+  <link rel="stylesheet" href="/res/css/bs-style.css">
+  <link rel="stylesheet" href="/res/css/style.css">
+  <link rel="stylesheet" href="/res/css/responsive.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+  <!-- Slick Carousel JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar Start -->
+  <div class="theme-topbar-wrapper fixed-top">
+    <div class="container theme-topbar">
+      <div>Diwali Sale Live!</div>
+      <div>Free Shopping Above ₹1999</div>
+      <div>Call Us: +91-94381 43118 , 70087 85946</div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/res/img/Urbancraft.svg" alt="brand">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+          </li>
+
+          <li class="nav-item dropdown" data-bs-auto-close="outside">
+            <a class="nav-link dropdown-toggle" href="/services.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              FURNITURE
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">BEDS</a></li>
+              <li><a class="dropdown-item" href="#">SOFA</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/services.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              HOME DECORS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">OPTION</a></li>
+              <li><a class="dropdown-item" href="#">OPTION</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/services.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              ALL PRODUCTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">OPTION</a></li>
+              <li><a class="dropdown-item" href="#">OPTION</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about-us.html">ABOUT US</a>
+          </li>
+          <!-- 
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact-us.html">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="blog.html">BLOG</a>
+          </li> -->
+
+
+          <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+
+        </ul>
+        <form class="d-flex theme-search-bar">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <span class="search-icon">
+            <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+              fill="none">
+              <path
+                d="M20.5 6C12.492 6 6 12.492 6 20.5C6 28.508 12.492 35 20.5 35C23.8285 35.0051 27.0566 33.8602 29.638 31.759L39.439 41.56C39.5774 41.7033 39.7429 41.8175 39.9259 41.8962C40.1089 41.9748 40.3057 42.0161 40.5049 42.0179C40.7041 42.0196 40.9016 41.9817 41.0859 41.9062C41.2703 41.8308 41.4378 41.7194 41.5786 41.5786C41.7194 41.4378 41.8308 41.2703 41.9062 41.0859C41.9817 40.9016 42.0196 40.7041 42.0179 40.5049C42.0161 40.3057 41.9748 40.1089 41.8962 39.9259C41.8175 39.7429 41.7033 39.5774 41.56 39.439L31.76 29.638C33.8609 27.0564 35.0054 23.8284 35 20.5C35 12.492 28.508 6 20.5 6ZM9 20.5C9 14.149 14.149 9 20.5 9C26.851 9 32 14.149 32 20.5C32 26.851 26.851 32 20.5 32C14.149 32 9 26.851 9 20.5Z"
+                fill="black" />
+            </svg>
+
+          </span>
+        </form>
+        <div class="theme-header-icon">
+          <span class="cart-icon">
+            <svg class="theme-light-icon" xmlns="http://www.w3.org/2000/svg" width="268" height="240"
+              viewBox="0 0 268 240" fill="none">
+              <path
+                d="M0 11.25C0 5.01562 5.01562 0 11.25 0H32.5781C42.8906 0 52.0312 6 56.2969 15H248.953C261.281 15 270.281 26.7188 267.047 38.625L247.828 110.016C243.844 124.734 230.484 135 215.25 135H80.0156L82.5469 148.359C83.5781 153.656 88.2187 157.5 93.6094 157.5H228.75C234.984 157.5 240 162.516 240 168.75C240 174.984 234.984 180 228.75 180H93.6094C77.3906 180 63.4688 168.469 60.4688 152.578L36.2813 25.5469C35.9531 23.7656 34.4063 22.5 32.5781 22.5H11.25C5.01562 22.5 0 17.4844 0 11.25ZM60 217.5C60 214.545 60.582 211.619 61.7127 208.89C62.8434 206.16 64.5008 203.679 66.5901 201.59C68.6794 199.501 71.1598 197.843 73.8896 196.713C76.6194 195.582 79.5453 195 82.5 195C85.4547 195 88.3806 195.582 91.1104 196.713C93.8402 197.843 96.3206 199.501 98.4099 201.59C100.499 203.679 102.157 206.16 103.287 208.89C104.418 211.619 105 214.545 105 217.5C105 220.455 104.418 223.381 103.287 226.11C102.157 228.84 100.499 231.321 98.4099 233.41C96.3206 235.499 93.8402 237.157 91.1104 238.287C88.3806 239.418 85.4547 240 82.5 240C79.5453 240 76.6194 239.418 73.8896 238.287C71.1598 237.157 68.6794 235.499 66.5901 233.41C64.5008 231.321 62.8434 228.84 61.7127 226.11C60.582 223.381 60 220.455 60 217.5ZM217.5 195C223.467 195 229.19 197.371 233.41 201.59C237.629 205.81 240 211.533 240 217.5C240 223.467 237.629 229.19 233.41 233.41C229.19 237.629 223.467 240 217.5 240C211.533 240 205.81 237.629 201.59 233.41C197.371 229.19 195 223.467 195 217.5C195 211.533 197.371 205.81 201.59 201.59C205.81 197.371 211.533 195 217.5 195Z"
+                fill="#737373" />
+            </svg>
+          </span>
+
+          <span class="wishlist-icon">
+            <svg class="theme-light-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+              <g clip-path="url(#clip0_19_628)">
+                <path
+                  d="M28.65 4.01865C25.0375 0.981155 19.4563 1.4374 16 4.95615C12.5438 1.4374 6.96251 0.974905 3.35001 4.01865C-1.34999 7.9749 -0.662493 14.4249 2.68751 17.8437L13.65 29.0124C14.275 29.6499 15.1125 30.0062 16 30.0062C16.8938 30.0062 17.725 29.6562 18.35 29.0187L29.3125 17.8499C32.6563 14.4312 33.3563 7.98115 28.65 4.01865ZM27.175 15.7374L16.2125 26.9062C16.0625 27.0562 15.9375 27.0562 15.7875 26.9062L4.82501 15.7374C2.54376 13.4124 2.08126 9.0124 5.28126 6.31865C7.71251 4.2749 11.4625 4.58115 13.8125 6.9749L16 9.20615L18.1875 6.9749C20.55 4.56865 24.3 4.2749 26.7188 6.3124C29.9125 9.00615 29.4375 13.4312 27.175 15.7374Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_19_628">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+
+          <span class="profile-icon">
+            <svg class="theme-light-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+              <path
+                d="M16 8C15.0111 8 14.0444 8.29325 13.2222 8.84265C12.3999 9.39206 11.759 10.173 11.3806 11.0866C11.0022 12.0002 10.9031 13.0055 11.0961 13.9755C11.289 14.9454 11.7652 15.8363 12.4645 16.5355C13.1637 17.2348 14.0546 17.711 15.0246 17.9039C15.9945 18.0969 16.9998 17.9978 17.9134 17.6194C18.8271 17.241 19.6079 16.6001 20.1574 15.7779C20.7068 14.9556 21 13.9889 21 13C21 11.6739 20.4732 10.4021 19.5355 9.46447C18.5979 8.52678 17.3261 8 16 8Z"
+                fill="black" />
+              <path
+                d="M16 2C13.2311 2 10.5243 2.82109 8.22202 4.35943C5.91973 5.89777 4.12532 8.08427 3.06569 10.6424C2.00607 13.2006 1.72882 16.0155 2.26901 18.7313C2.80921 21.447 4.14258 23.9416 6.10051 25.8995C8.05845 27.8574 10.553 29.1908 13.2687 29.731C15.9845 30.2712 18.7994 29.9939 21.3576 28.9343C23.9157 27.8747 26.1022 26.0803 27.6406 23.778C29.1789 21.4757 30 18.7689 30 16C29.9958 12.2883 28.5194 8.72977 25.8948 6.10518C23.2702 3.48059 19.7117 2.00423 16 2ZM23.992 24.926C23.9721 23.6143 23.4377 22.363 22.5039 21.4416C21.5702 20.5202 20.3118 20.0025 19 20H13C11.6882 20.0025 10.4298 20.5202 9.4961 21.4416C8.56235 22.363 8.02794 23.6143 8.00801 24.926C6.19457 23.3067 4.91574 21.1749 4.34084 18.8127C3.76594 16.4505 3.92211 13.9693 4.78864 11.6979C5.65518 9.42637 7.19123 7.47167 9.19338 6.09257C11.1955 4.71347 13.5693 3.97503 16.0005 3.97503C18.4317 3.97503 20.8055 4.71347 22.8076 6.09257C24.8098 7.47167 26.3458 9.42637 27.2124 11.6979C28.0789 13.9693 28.2351 16.4505 27.6602 18.8127C27.0853 21.1749 25.8054 23.3067 23.992 24.926Z"
+                fill="black" />
+            </svg>
+          </span>
+        </div>
+
+        <!-- <a href="/contact-us.html">
+          <button class="" type="button">Get a Quote
+          </button>
+        </a> -->
+      </div>
+    </div>
+  </nav>
+  <div class="product-nav fixed-top">
+    <ul class="product-list">
+      <li>
+        <a href="#">Beds</a>
+        <ul class="product-dropdown">
+          <li> <a href="#">Beds1</a></li>
+          <li> <a href="#">Beds2</a></li>
+          <li> <a href="#">Beds3</a></li>
+          <li> <a href="#">Beds4</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Sofa</a>
+        <ul class="product-dropdown">
+          <li> <a href="#">Beds1</a></li>
+          <li> <a href="#">Beds2</a></li>
+          <li> <a href="#">Beds3</a></li>
+          <li> <a href="#">Beds4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Mattress</a>
+        <ul class="product-dropdown">
+          <li> <a href="#">Beds1</a></li>
+          <li> <a href="#">Beds2</a></li>
+          <li> <a href="#">Beds3</a></li>
+          <li> <a href="#">Beds4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Home Decor</a>
+        <ul class="product-dropdown">
+          <li> <a href="#">Beds1</a></li>
+          <li> <a href="#">Beds2</a></li>
+          <li> <a href="#">Beds3</a></li>
+          <li> <a href="#">Beds4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Lamps & Lightning</a>
+        <ul class="product-dropdown">
+          <li> <a href="#">Beds1</a></li>
+          <li> <a href="#">Beds2</a></li>
+          <li> <a href="#">Beds3</a></li>
+          <li> <a href="#">Beds4</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Study & Office</a>
+        <ul class="product-dropdown">
+          <li> <a href="#">Beds1</a></li>
+          <li> <a href="#">Beds2</a></li>
+          <li> <a href="#">Beds3</a></li>
+          <li> <a href="#">Beds4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Navigation Bar end-->
+
+  <!-- Theme Hero Start -->
+  <section class="theme-hero carousel-container">
+    <div class="carousel">
+      <div><img src="/res/img/content/carousel/carousel-1.png" alt="Slide 2"></div>
+      <div><img src="/res/img/content/carousel/carousel-2.png" alt="Slide 1"></div>
+      <div><img src="/res/img/content/carousel/carousel-3.png" alt="Slide 3"></div>
+      <!-- Add more carousel items as needed -->
+    </div>
+
+    <!-- Navigation buttons -->
+    <button class="prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="121" height="212" viewBox="0 0 121 212" fill="none">
+        <path
+          d="M4.40625 95.4062C-1.45312 101.266 -1.45312 110.781 4.40625 116.641L94.4062 206.641C100.266 212.5 109.781 212.5 115.641 206.641C121.5 200.781 121.5 191.266 115.641 185.406L36.2344 106L115.594 26.5937C121.453 20.7344 121.453 11.2188 115.594 5.35938C109.734 -0.5 100.219 -0.5 94.3594 5.35938L4.35938 95.3594L4.40625 95.4062Z"
+          fill="black" />
+      </svg>
+    </button>
+    <button class="next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="150" height="240" viewBox="0 0 150 240" fill="none">
+        <path
+          d="M145.594 109.406C151.453 115.266 151.453 124.781 145.594 130.641L55.5937 220.641C49.7344 226.5 40.2188 226.5 34.3594 220.641C28.5 214.781 28.5 205.266 34.3594 199.406L113.766 120L34.4062 40.5937C28.5469 34.7344 28.5469 25.2188 34.4062 19.3594C40.2656 13.5 49.7812 13.5 55.6406 19.3594L145.641 109.359L145.594 109.406Z"
+          fill="black" />
+      </svg>
+    </button>
+  </section>
+
+  <!-- <section class="promotional-container">
+    <div class="promotional-content">
+      <div class="container get-points-content">
+        EARN POINTS EVERY TIME YOU MAKE A PURCHASE!
+      </div>
+      <a href="#" class="explore-all-looks">
+        <button class="theme-btn theme-light-btn rounded-btn" type="button">EXPLORE ALL LOOKS
+        </button>
+      </a>
+    </div>
+    <div class="promotional-content promo-discount">
+      <div class="container get-points-content">
+        INVITE YOUR FRIENDS TO URBANCRAFT & <br>AND EARN UP TO ₹500 IN YOUR WALLET!
+      </div>
+      <a href="#" class="explore-all-looks">
+        <button class="theme-btn theme-light-btn rounded-btn" type="button">EXPLORE ALL LOOKS
+        </button>
+      </a>
+    </div>
+  </section> -->
+
+  <!-- Theme Hero End -->
+
+  <!-- Top Categories Start-->
+  <section class="top-categories">
+    <div>
+      <!-- <div class="theme-sub-heading">
+      Top Categories
+    </div> -->
+      <div class="top-categories-list">
+        <div class="categories-item">
+          <div class="categories-item-img">
+            <img src="/res/img/content/category/chair.png" alt="Bestsellers">
+          </div>
+          <div class="categories-item-caption"> Bestsellers</div>
+        </div>
+
+        <div class="categories-item">
+          <div class="categories-item-img">
+            <img src="/res/img/content/category/chair.png" alt="Bestsellers">
+          </div>
+          <div class="categories-item-caption"> Bestsellers</div>
+        </div>
+
+
+        <div class="categories-item">
+          <div class="categories-item-img">
+            <img src="/res/img/content/category/chair.png" alt="Bestsellers">
+          </div>
+          <div class="categories-item-caption"> Bestsellers</div>
+        </div>
+
+
+        <div class="categories-item">
+          <div class="categories-item-img">
+            <img src="/res/img/content/category/chair.png" alt="Bestsellers">
+          </div>
+          <div class="categories-item-caption"> Bestsellers</div>
+        </div>
+
+
+        <div class="categories-item">
+          <div class="categories-item-img">
+            <img src="/res/img/content/category/chair.png" alt="Bestsellers">
+          </div>
+          <div class="categories-item-caption"> Bestsellers</div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Too Categories End-->
+
+
+  <section class="discount-section">
+    <div class="container">
+      <div class="row">
+        <div class="discount-banner">
+          <img src="./res/img/materials/10_off.png" alt="10% off ">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Shop by brands-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="theme-heading">
+          SHOP BY BRANDS
+        </div>
+      </div>
+      <div class="row theme-cards">
+        <div class="col-lg-4">
+          <div class="theme-card-img">
+            <img src="" alt="brand1">
+          </div>
+          <div class="theme-card-caption">
+            <div class="theme-card-main-line">
+              Upto 35% off + Extra Discounts
+            </div>
+            <div class="theme-card-info-line">
+              On Featured Brand (T & C Applied)
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="theme-card-img">
+            <img src="" alt="brand1">
+          </div>
+          <div class="theme-card-caption">
+            <div class="theme-card-main-line">
+              Upto 70% off + Extra Discounts
+            </div>
+            <div class="theme-card-info-line">
+              On Featured Brand (T&C Applied)
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4">
+          <div class="theme-card-img">
+            <img src="" alt="brand1">
+          </div>
+          <div class="theme-card-caption">
+            <div class="theme-card-main-line">
+              Upto 20% off + Extra Discounts
+            </div>
+            <div class="theme-card-info-line">
+              On Featured Brand (T&C Applied)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Shop by brands-->
+  <footer>
+    <div class="container">
+      <div class="row footer-content">
+        <div class="col-lg-3 col-md-12 col-sm-12 footer-brand">
+          <img src="/res/img/Urbancraft.svg" alt="logo-footer">
+          <p class="mt-3">
+            Your trusted partner in transforming businesses into thriving online ventures. We don't just provide
+            services; we craft
+            experiences, build brands, and empower entrepreneurs to navigate the digital marketplace with confidence.
+            <a href="/about-us.html">Learn More</a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 footer-solutions">
+          <div class="footer-heading">Products</div>
+          <ul>
+            <li>Bestsellers</li>
+            <li>Fashion</li>
+            <li>Gift & Toys</li>
+            <li>Home & Furniture</li>
+            <li>Home Decors</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 footer-quick-links">
+          <div class="footer-heading">Quick Links</div>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Review Us</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 footer-about">
+          <div class="footer-heading">Important Links</div>
+          <ul>
+            <li>Terms & Conditions</li>
+            <li>Privacy & Policy</li>
+            <li>Disclaimer</li>
+            <li>Review Us</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div>
+          © 2023 Urbancraft, Ltd. All Rights Reserved
+        </div>
+        <div class="footer-social-widget">
+          <a href="#" title="twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" fill="none">
+              <path
+                d="M182.438 22.5H215.531L143.25 105.094L228.281 217.5H161.719L109.547 149.344L49.9219 217.5H16.7812L94.0781 129.141L12.5625 22.5H80.8125L127.922 84.7969L182.438 22.5ZM170.813 197.719H189.141L70.8281 41.25H51.1406L170.813 197.719Z"
+                fill="#666666" />
+            </svg>
+          </a>
+          <a href="#" title="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="210" height="240" viewBox="0 0 210 240" fill="none">
+              <path
+                d="M47.0062 210H3.46875V69.7969H47.0062V210ZM25.2141 50.6719C11.2922 50.6719 0 39.1406 0 25.2188C9.96468e-08 18.5316 2.65647 12.1183 7.38503 7.38973C12.1136 2.66117 18.5269 0.00469971 25.2141 0.00469971C31.9012 0.00469971 38.3145 2.66117 43.0431 7.38973C47.7716 12.1183 50.4281 18.5316 50.4281 25.2188C50.4281 39.1406 39.1313 50.6719 25.2141 50.6719ZM209.953 210H166.509V141.75C166.509 125.484 166.181 104.625 143.873 104.625C121.237 104.625 117.769 122.297 117.769 140.578V210H74.2781V69.7969H116.034V88.9219H116.644C122.456 77.9063 136.655 66.2813 157.838 66.2813C201.9 66.2813 210 95.2969 210 132.984V210H209.953Z"
+                fill="#666666" />
+            </svg>
+          </a>
+          <a href="#" title="mail">
+            <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" fill="none">
+              <path
+                d="M22.5 30C10.0781 30 0 40.0781 0 52.5C0 59.5781 3.32813 66.2344 9 70.5L111 147C116.344 150.984 123.656 150.984 129 147L231 70.5C236.672 66.2344 240 59.5781 240 52.5C240 40.0781 229.922 30 217.5 30H22.5ZM0 82.5V180C0 196.547 13.4531 210 30 210H210C226.547 210 240 196.547 240 180V82.5L138 159C127.312 167.016 112.688 167.016 102 159L0 82.5Z"
+                fill="#666666" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Include Bootstrap JavaScript (Popper.js is included in Bootstrap 5) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script> -->
+
+  <script src="/res/js/bs-bundle.js"></script>
+  <script src="/res/js/script.js"></script>
+</body>
+
+</html>
