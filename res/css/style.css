@@ -292,6 +292,7 @@ section{
 .navbar {
     margin-top: 35px;
     background-color: var(--theme-white);
+    z-index:2;
 
 }
 .navbar-brand img {
@@ -319,12 +320,15 @@ font-size:14px;
 .product-nav ul{
     position: relative;
 }
+.product-nav{
+    top:100px;
+    z-index:1;
+}
 .product-nav .product-list{
 display: flex;
 align-items: center;
 justify-content: center;
 background-color:var(--theme-gray-800);
-margin-top:100px;
 color: var(--theme-white);
 }
 
