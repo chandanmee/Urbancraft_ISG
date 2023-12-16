@@ -832,9 +832,27 @@ section {
     overflow-x: scroll;
     overflow-y: hidden;
     margin-top:1rem;
-
-
 }
+
+.product-showcase-scroll ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 11 */
+  }
+  
+  .product-showcase-scroll ul::-webkit-scrollbar {
+    display: none; /* WebKit (Chrome, Safari, etc.) */
+  }
+  
+  .product-showcase-scroll li {
+    flex: 0 0 auto;
+    margin-right: 15px;
+  }
 
 .product-img-container .product-image-showcase .product-showcase-scroll .showcase-img-index {
     list-style: none;
