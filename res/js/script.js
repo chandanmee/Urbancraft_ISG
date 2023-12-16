@@ -160,3 +160,37 @@ $(document).ready(function(){
   });
 });
 
+// scroolll to right
+$(document).ready(function () {
+  // Define the amount to scroll (1rem in this example)
+  var scrollAmount = 16; // Assuming 1rem is equal to 16 pixels
+
+  // Cache the container element
+  var $container = $('.product-showcase-scroll ul');
+
+  // Attach click event to the button
+  $('#scrollRightButton').on('click', function () {
+    // Calculate the new scroll position
+    var newScrollLeft = $container.scrollLeft() + scrollAmount;
+
+    // Animate the scrolling
+    $container.animate({ scrollLeft: newScrollLeft }, 300);
+  });
+});
+
+
+
+$(document).ready(function () {
+  var scrollAmount = 50; // Adjust the scroll amount as needed
+  var $container = $('.product-showcase-scroll');
+
+  $('.scroll-to-left').on('click', function () {
+    var newScrollLeft = $container.scrollLeft() - scrollAmount;
+    $container.animate({ scrollLeft: newScrollLeft }, 300);
+  });
+
+  $('.scroll-to-right').on('click', function () {
+    var newScrollLeft = $container.scrollLeft() + scrollAmount;
+    $container.animate({ scrollLeft: newScrollLeft }, 300);
+  });
+});
