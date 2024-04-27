@@ -206,11 +206,25 @@ body {
     font-size: var(--text-30);
 }
 
+.theme-sm-heading {
+    font-size: var(--text-16);
+    color: var(--theme-heading-1);
+    font-weight: 600;
+    margin-top:.875rem;
+}
+
 .theme-caption {
     font-size: var(--text-16);
     padding-top: .375rem;
 }
 
+.theme-caption-heading-1{
+    font-size:var(--text-14 );
+    font-weight:600;  
+}
+.theme-caption-content-1{
+    font-size:var(--text-14 );
+}
 /* theme basic end */
 
 /* section */
@@ -397,6 +411,10 @@ section {
 
 
 /* button----------------------------------------------------------------------------- */
+.shop-btn{
+    display: flex;
+    margin-top:1rem;
+}
 .theme-btn {
     padding: .575rem 1.8rem;
     border: none;
@@ -406,6 +424,23 @@ section {
 .theme-light-btn {
     background-color: var(--theme-white);
     color: var(--theme-dark);
+}
+.add-to-cart-btn{
+    border:2px solid var(--theme-warning);
+    padding:.675rem 4.675rem;
+    cursor: pointer;
+    border-radius:var(--border-radius);
+    color: var(--theme-warning);
+    font-weight:700;
+}
+.buy-now-btn{
+    background-color:var(--theme-warning);
+    padding:.675rem 5.875rem;
+    cursor: pointer;
+    margin-left:1rem;
+    border-radius:var(--border-radius);
+    color: var(--theme-white);
+    font-weight:700;
 }
 
 
@@ -420,6 +455,7 @@ section {
     overflow: hidden;
     position: relative;
     height: 630px;
+    margin:0;
     /* margin-top:30px; */
 }
 
@@ -520,7 +556,9 @@ section {
 .offer-section {
     padding: 4rem 0;
 }
-
+.offer-section div img{
+    width:100%;
+}
 .promotional-offer .col-lg-6 .promotional-left,
 .promotional-offer .col-lg-6 .promotional-right {
     display: block;
@@ -778,7 +816,8 @@ section {
     border: 2px solid var(--border-1);
     border-radius: 2px;
     position: relative;
-    width: 500px;
+    width:630px;
+    max-height:550px;
     overflow: hidden;
 }
 
@@ -808,10 +847,10 @@ section {
     cursor: pointer;
     background-color: var(--theme-gray-200);
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     padding: 5px;
-    right:6rem;
+    right:2.5rem;
     top:.675rem;
 }
 
@@ -820,8 +859,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 
 }
 
@@ -906,7 +945,7 @@ margin-top:.175rem;
     margin-top:.375rem;
 }
 .product-view-description .reviews-count{
-    margin-top:.375rem;
+    margin:.375rem 0;
 }
 .product-view-description .product-price .discounted-price{
     font-size:var(--text-24);
@@ -914,6 +953,103 @@ margin-top:.175rem;
     vertical-align: sub;
 }
 
+/* delivery-option */
+.delivery-option{
+    margin-top:1rem;
+}
+.delivery-option>form{
+    margin: 8px 0 0;
+    padding: 0;
+    position: relative;
+}
+
+.delivery-check .pincode-code {
+    border-radius: var(--border-radius);
+    border: 1px solid #d4d5d9;
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 160px;
+    outline: 0;
+    width: 250px;
+}
+.delivery-check .pincode-check {
+    position: relative;
+    left: -60px;
+    background-color: transparent;
+}
+
+.delivery-check .pincode-button {
+    outline: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #fff;
+    border: 0;
+    color: var(--theme-warning);
+    text-transform: capitalize;
+}
+.delivery-option .enter-pincode-message{
+margin-top:.375rem;
+font-size:1rem;
+}
+
+.product-details-row{
+    display: flex;
+    width:650px;
+}.view-product-details:not(:first-child){
+    margin-top:1rem;
+}
+.product-details-row .product-brand{
+    width:325px;
+}
+
+.view-product-details .product-brand{
+margin-top:1rem;
+}
+
+/* view-product-code, sellers details */
+.sellers-details .theme-caption-heading-1{
+display: flex;
+align-items: center;
+}
+.sellers-details .theme-caption-heading-1 .seller-rating{
+margin-left:.375rem;
+}
+.sellers-details .theme-caption-heading-1 .view-product-code-seller{
+
+}
+.view-product-caption{
+    margin-top:1rem;
+}
+.view-product-caption .theme-caption-heading-1{
+    font-weight:700;
+}
+.view-product-caption .view-product-code-seller{
+color:var(--theme-primary);
+}
+
+/* view-product-warranty */
+.view-product-warranty .warranty-message{
+    margin-top:.375rem;
+}
+.seller-rating{
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--theme-white);
+    height: 24px;
+    border-radius: var(--border-radius);
+    background-color: var(--theme-primary);
+    padding:0 8px;
+}
+.seller-rating span{
+    vertical-align: middle;
+}
+.seller-rating svg{
+    width:12px;
+    height:12px;
+}
 /* bestsellers */
 
 
